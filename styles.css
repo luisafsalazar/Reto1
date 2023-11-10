@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Skranji;
+    src: url("./Skranji/Skranji-Bold.ttf");
+}
+
+*{
+    font-family: Skranji;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Reto2/background.png");
+    display: flex;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel{
+    position: relative;
+    padding: 80px;
+    border-radius: 35px;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda,.derecha{
+    background-color: rgba(18, 46, 205, 0.83);
+    cursor: pointer;
+    color: white;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: large;
+}
+
+.boton{
+    background-color: rgba(18, 46, 205, 0.83);
+    color: white;
+    cursor: pointer;
+    padding: 8px 13px 8px 13px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+#imagen1{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar_desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desc{
+    text-align: center;
+}
+
+.volver{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    background-color: transparent;
+    border: none;
+    color: rgba(18, 46, 205, 0.83);
+    cursor: pointer;
+    font-size: large;
+}
+
+.izquierda:disabled,.derecha:disabled{
+    opacity: 0.5;
+}

@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "/Reto1/style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale</title>
+    <link rel="stylesheet" href="/Reto2/styles.css">
+    <link rel="icon" href="/Reto2/imagenes/FavIcon.png" type="image/x-ico">
 </head>
 <body>
     <main>
-        <img id = "logo" src = "Diseño sin título.png" alt = "Logo" title = "Borcelle"
-        width="200px">
-        <h1 id = "titulo">Calculadora de propinas</h1>
-        <div class = "informacion">
-            <form>
-                <label>Total de la cuenta: </label>
-                <input type = "number" id = "cuenta" required/>
-                <label>Porcentaje de propina: </label>
-                <input type = "number" id="propina" required />
-                <button id = "boton" type = "button" onclick="calcularPropina()">CALCULAR</button>
-            </form>
-        </div>
-        <h1 id="valor"></h1>
-        <div class = "resultado">
-            <h1>RESUMEN</h1>
-            <p id="total-cuenta-pagar"></p>
-            <p id="total-propina-pagar"></p>
-            <p id="total-pago-pagar"></p>
+        <div class = "carrusel">
+            <button class = "volver ocultar">Volver</button>
+            <button class = "izquierda"><</button>
+            <div class = "personaje" id="personajeid">
+                <img id="imagen1" src="" alt="Golem">
+                <div class = "desc ocultar">
+                    <h1 id = "nombre"></h1>
+                    <p class="descripcion" id="descripcion1"></p>
+                </div>
+                <button class = "boton"></button>
             </div>
-
+            <button class = "derecha">></button>       
         </div>
-
-        <script src="script.js"></script>
+    <script src="./script.js"></script>
     </main>
-    
 </body>
 </html>
