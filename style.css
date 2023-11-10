@@ -1,0 +1,96 @@
+body {
+    margin: 10px;
+    text-align: center;
+    }
+
+body::before{ /* tomar etiqueta body y aplicar el pseudo-elemento before que agrega contenido antes del body */
+    content: '';
+    top: 0;
+    left: 0;  /*posiciona la imagen arriba a la izq de toda la pantalla*/
+    width: 100%;
+    height: 100%;
+    background-image: url("../Reto1/wallpaperflare.com_wallpaper.jpg");
+    opacity: 0.4;
+    position: fixed; /*coloca el elemento respecto a la pantalla*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+main {
+    z-index: 0;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;   
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(102, 49, 49);
+    border-radius: 15px;
+    /*Redondea los bordes*/
+    background-color: rgb(244, 222, 216);
+}
+
+.informacion {
+    margin: 2%;
+    padding: 30px;
+    /*Para que separe*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    /*tipo de letra*/
+    border-radius: 15px;
+    /*Redondea los bordes*/
+    background-color: rgb(158, 80, 61);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#boton{
+    background-color: rgb(244, 222, 216);
+    padding: 10px 0;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.resultado{
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 30px;
+    margin: 2%;
+    border-radius: 15px;
+    background-color: rgb(158, 80, 61);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;    
+}
+
+input {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    padding: 3px 10px;
+    appearance: none;
+    margin: 0;
+    text-align: center;
+    margin: 0;
+}
